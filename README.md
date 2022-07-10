@@ -6,6 +6,9 @@ Strategic Electrical Technolgies is an Orange County based Electrical Contractor
 This project is a client side application with the intention to become industry ready. The main collaborator for this project is Troy. 
 
 <h3>Start Application:</h3>
-clone repositroy
-cd into setincreact
-npm start
+<ul>
+  <li>clone repositroy</li>
+  <li>cd into setincreact</li>
+  <li>npm start</li>
+</ul>  
+
