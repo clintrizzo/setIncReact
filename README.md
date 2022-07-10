@@ -7,7 +7,7 @@ This project is a client side application with the intention to become industry 
 
 <h3>Start Application:</h3>
 <ul>
-  <li>clone repositroy</li>
+  <li>Clone Repository</li>
   <li>cd into setincreact</li>
   <li>npm start</li>
 </ul>  
