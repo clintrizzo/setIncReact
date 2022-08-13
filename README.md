@@ -1,8 +1,6 @@
 # SetINC Electrical :hammer: Under Construction :hammer:
     
 #Table of Contents
-    
-  - [React Portfolio](#react-portfolio)
   - [Description:](#description)
   - [Installation:](#installation)
   - [Packages:](#packages)
