@@ -2,58 +2,43 @@ import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import NavDropdown from 'react-bootstrap/NavDropdown';
-import Offcanvas from 'react-bootstrap/Offcanvas';
+import '../navbar/navbar.css'
 
-function OffcanvasExample() {
+function BasicExample() {
   return (
-    <div>
-      {['md'].map((expand) => (
-        <Navbar key={expand} bg="dark" expand={expand} className="mb-3">
-          <Container fluid>
-          <Container>
-          <Navbar.Brand href="#home">
-            <img
-              src="./images/setloco.ico"
-              width="30"
-              height="30"
-              className="d-inline-block align-top"
-              alt="React Bootstrap logo"
-            />{' Strategic Electrical Technologies'}
-          </Navbar.Brand>
-        </Container>            
-        <Navbar.Toggle aria-controls={`offcanvasNavbar-expand-${expand}`} />
-            <Navbar.Offcanvas
-              id={`offcanvasNavbar-expand-${expand}`}
-              aria-labelledby={`offcanvasNavbarLabel-expand-${expand}`}
-              placement="end"
-            >
-              <Offcanvas.Header closeButton>
-                <Offcanvas.Title id={`offcanvasNavbarLabel-expand-${expand}`}>
-                  Offcanvas
-                </Offcanvas.Title>
-              </Offcanvas.Header>
-              <Offcanvas.Body>
-                <Nav className="justify-content-end flex-grow-1 pe-3">
-                  <Nav.Link href="#action1">Home</Nav.Link>
-                  <Nav.Link href="#action2">Link</Nav.Link>
-                  <NavDropdown
-                    title="Dropdown"
-                    id={`offcanvasNavbarDropdown-expand-${expand}`}
-                  >
-                    <NavDropdown.Item href="#action3">Instagram</NavDropdown.Item>
-                    <NavDropdown.Divider />
-                    <NavDropdown.Item href="#action4">
-                      Facebook
-                    </NavDropdown.Item>
-                  </NavDropdown>
-                </Nav>
-              </Offcanvas.Body>
-            </Navbar.Offcanvas>
-          </Container>
-        </Navbar>
-      ))}
-    </div>
+    <Navbar expand="lg" className='navbar' sticky='top'>
+      <Container>
+        <Navbar.Brand href="#home">
+        <img
+        className='rotateimg180'
+        src="../images/setloco.ico"
+        width="35"
+        height="35"
+        />{' Strategic Electrical Technologies'}
+        </Navbar.Brand>
+        <Navbar.Toggle aria-controls="basic-navbar-nav" />
+        <Navbar.Collapse id="basic-navbar-nav" style={{marginLeft: '60px'}}>
+          <Nav className="me-auto">
+            <Nav.Link href="#home">Home</Nav.Link>
+            <Nav.Link href="#link">Link</Nav.Link>
+            <NavDropdown title="Social Links" id="basic-nav-dropdown">
+              <NavDropdown.Item href="https://www.instagram.com/setincusa/" rel="noopener noreferrer" target="_blank">
+                <i className="fa fa-instagram" aria-hidden="true" style={{paddingRight: '5px', color: 'black'}}/> Instagram
+              </NavDropdown.Item>
+              <NavDropdown.Divider />
+              <NavDropdown.Item href="https://www.facebook.com/setincusa" rel="noopener noreferrer" target="_blank">
+                <i className="fa fa-facebook" aria-hidden="true" style={{paddingRight: '10px', color: 'black'}}/> Facebook
+              </NavDropdown.Item>
+              <NavDropdown.Divider />
+              <NavDropdown.Item href="tel:">
+                <i className="fa fa-phone" aria-hidden="true" style={{paddingRight: '10px', color: 'black'}}/>Contact Us
+              </NavDropdown.Item>
+            </NavDropdown>
+          </Nav>
+        </Navbar.Collapse>
+      </Container>
+    </Navbar>
   );
 }
 
-export default OffcanvasExample;
+export default BasicExample;
