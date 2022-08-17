@@ -1,11 +1,16 @@
+import React, { Component } from 'react';
 import './App.css';
+import './components/navbar/navbar.css'
+import Navbar from './components/navbar/navbar'
 
-function App() {
-  return (
-    <div >
-      <h1>SetInc React</h1>
-    </div>
-  );
+class App extends Component {
+  render() {
+    return (
+      <div>
+        <Navbar />
+      </div>
+    );
+  }
 }
 
 export default App;
