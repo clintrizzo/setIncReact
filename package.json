@@ -14,12 +14,13 @@
     "react": "^18.2.0",
     "react-bootstrap": "^2.5.0",
     "react-dom": "^18.2.0",
+    "react-mdl": "^2.1.0",
     "react-router": "^6.3.0",
     "react-router-dom": "^6.3.0",
     "react-scripts": "5.0.1",
+    "styled-components": "^5.3.5",
     "web-vitals": "^2.1.4"
   },
-
   "scripts": {
     "start": "PORT=3030 react-scripts start",
     "build": "react-scripts build",
@@ -28,11 +29,9 @@
     "cypress:open": "cypress open",
     "cypress:run": "cypress run"
   },
-
   "devDependencies": {
     "cypress": "^10.4.0"
   },
-
   "browserslist": {
     "production": [
       ">0.2%",

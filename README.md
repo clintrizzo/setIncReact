@@ -22,7 +22,8 @@ npx create-react-app "my-app"
 2. react-router-dom (npm install --save react-router-dom)
 3. react-bootstrap (npm install react-bootstrap bootstrap@4.6.0)
 4. bootstrap (npm install react-bootstrap bootstrap)
-5. fontawesome (npm i --save @fortawesome/fontawesome-svg-core / npm install --save @fortawesome/free-solid-svg-icons / npm install --save @fortawesome/react-fontawesome)
+5. react-mdl (npm install --save react-mdl)
+6. fontawesome (npm i --save @fortawesome/fontawesome-svg-core / npm install --save @fortawesome/free-solid-svg-icons / npm install --save @fortawesome/react-fontawesome)
 
 <!-- ## Testing:
 npm install cypress --save-dev
