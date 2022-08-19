@@ -11,7 +11,7 @@ import "./footer.css";
       <a href="https://www.facebook.com/setincusa" rel="noopener noreferrer" target="_blank">
         <i className="fa fa-facebook" aria-hidden="true" id='links'/>
       </a>
-      <a href="https://www.facebook.com/setincusa" rel="noopener noreferrer" target="_blank">
+      <a href="https://www.linkedin.com/in/nicky-wilson-9b873089/" rel="noopener noreferrer" target="_blank">
         <i className="fa fa-linkedin" aria-hidden="true" id='links'/>
       </a>
       <a href="tel:">

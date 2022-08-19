@@ -31,7 +31,7 @@ function BasicExample() {
                 <i className="fa fa-facebook" aria-hidden="true" style={{paddingRight: '10px', color: 'black'}}/> Facebook
               </NavDropdown.Item>
               <NavDropdown.Divider />
-              <NavDropdown.Item href="https://www.facebook.com/setincusa" rel="noopener noreferrer" target="_blank">
+              <NavDropdown.Item href="https://www.linkedin.com/in/nicky-wilson-9b873089/" rel="noopener noreferrer" target="_blank">
                 <i className="fa fa-linkedin" aria-hidden="true" style={{paddingRight: '10px', color: 'black'}}/> LinkedIn
               </NavDropdown.Item>
               <NavDropdown.Divider />
