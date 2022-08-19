@@ -1,5 +1,5 @@
 .navbar{
-  background-color: grey;
+  background-color: black;
 }
 
 @keyframes spinning {
@@ -12,4 +12,8 @@
   animation-iteration-count: infinite;
 /* linear | ease | ease-in | ease-out | ease-in-out */
   animation-timing-function: linear;
+}
+
+#basic-nav-dropdown{
+  color: white
 }
