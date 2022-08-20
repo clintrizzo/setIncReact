@@ -17,7 +17,7 @@ function BasicExample() {
         color='white'
         />{' Strategic Electrical Technologies'}
         </Navbar.Brand>
-        <Navbar.Toggle aria-controls="basic-navbar-nav" />
+        <Navbar.Toggle aria-controls="basic-navbar-nav" style={{backgroundColor: 'grey'}}/>
         <Navbar.Collapse id="basic-navbar-nav" style={{marginLeft: '60px'}}>
           <Nav className="me-auto">
             <Nav.Link href="#home" style={{color: 'white'}}>Home</Nav.Link>
