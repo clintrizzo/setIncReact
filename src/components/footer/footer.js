@@ -4,7 +4,7 @@ import "./footer.css";
   const Footer = () => (
     <div className="footer">
       <img src='./images/footer/setinc-footer-log.png' alt='footerImg' className='footerImg'></img>
-      <a rel="noopener noreferrer" target="_blank" id='text'>Strategic Electrical Technologies</a>
+      <a rel="noopener noreferrer" target="_blank" id='text'>S.E.T. Inc. USA</a>
       <a href="https://www.instagram.com/setincusa/" rel="noopener noreferrer" target="_blank">
         <i className="fa fa-instagram" aria-hidden="true" id='links'/>
       </a>
