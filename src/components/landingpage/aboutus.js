@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import { Grid, Cell } from 'react-mdl';
 
-class Aboutus extends Component {
+class LandingPage extends Component {
   render() {
     return(
       <div id="missionStatement">
@@ -74,4 +74,4 @@ class Aboutus extends Component {
   }
 }
 
-export default Aboutus;
+export default LandingPage;

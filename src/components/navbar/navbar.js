@@ -2,13 +2,15 @@ import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import NavDropdown from 'react-bootstrap/NavDropdown';
+import { Link } from "react-router-dom";
+
 import '../navbar/navbar.css'
 
 function BasicExample() {
   return (
     <Navbar expand="lg" className='navbar' sticky='top'>
       <Container>
-        <Navbar.Brand href="#home" style={{color: 'red'}}>
+        <Navbar.Brand style={{color: 'red'}}>
         <img
         className='rotateimg180'
         src="../images/setloco.ico"
@@ -20,8 +22,8 @@ function BasicExample() {
         <Navbar.Toggle aria-controls="basic-navbar-nav" style={{backgroundColor: 'grey'}}/>
         <Navbar.Collapse id="basic-navbar-nav" style={{marginLeft: '60px'}}>
           <Nav className="me-auto">
-            <Nav.Link href="#home" style={{color: 'white'}}>Home</Nav.Link>
-            <Nav.Link href="#link" style={{color: 'white'}}>Link</Nav.Link>
+            <Link to="/" style={{color: 'white'}} id='pages'>Home</Link>
+            <Link to="/merchandise" style={{color: 'white'}} id='pages'>Merchandise</Link>
             <NavDropdown title="Social Links" id="basic-nav-dropdown" className='socialIcons'>
               <NavDropdown.Item href="https://www.instagram.com/setincusa/" rel="noopener noreferrer" target="_blank">
                 <i className="fa fa-instagram" aria-hidden="true" style={{paddingRight: '5px', color: 'black'}}/> Instagram

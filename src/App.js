@@ -1,19 +1,22 @@
-import React, { Component } from 'react';
+import React from 'react';
 import './App.css';
-import Navbar from './components/navbar/navbar'
-import About from './components/landingpage/aboutus.js'
+
+import { BrowserRouter as Router, Routes, Route} from 'react-router-dom';
+import Navbar from './components/navbar/navbar.js'
+import LandingPage from './components/landingpage/aboutus.js';
+import Merchandise from './components/merchandise/merchandise.js';
 import Footer from './components/footer/footer'
 
-class App extends Component {
-  render() {
-    return (
-      <div>
-        <Navbar />
-        <About />
-        <Footer />
-      </div>
-    );
-  }
-}
+
+const App = () => (
+  <div>
+  <Navbar />
+    <Routes>
+      <Route path="/" element={<LandingPage />} />
+      <Route path="/merchandise" element={<Merchandise />} />
+    </Routes>
+  <Footer />
+    </div>
+)
 
 export default App;
