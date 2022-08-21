@@ -14,16 +14,25 @@
   animation-timing-function: linear;
 }
 
-#basic-nav-dropdown{
-  color: white
+#navTitle{
+  margin-left: 5px;
 }
 
 #pages {
   margin-top: 6.5px;
   margin-right: 30px;
-  color: black
+}
+#basic-nav-dropdown{
+  color: white
 }
 
 .navbar-toggler{
   margin-right: -12px;
+}
+
+@media screen and (max-width: 812px){
+  #navTitle{
+    font-size: 16px
+  }
+
 }
