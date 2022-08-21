@@ -19,8 +19,11 @@
 }
 
 #pages {
-  margin-left: 15px;
   margin-top: 6.5px;
   margin-right: 30px;
   color: black
+}
+
+.navbar-toggler{
+  margin-right: -12px;
 }

@@ -10,20 +10,21 @@ function BasicExample() {
   return (
     <Navbar expand="lg" className='navbar' sticky='top'>
       <Container>
-        <Navbar.Brand style={{color: 'black'}}>
+        <Navbar.Brand style={{color: 'white'}}>
         <img
         className='rotateimg180'
         src="../images/setloco.ico"
         width="35"
         height="35"
+        color='white'
         />{' Strategic Electrical Technologies'}
         </Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav"/>
-        <Navbar.Collapse id="basic-navbar-nav" className='navHeader'>
+        <Navbar.Collapse id="basic-navbar-nav" style={{marginLeft: '60px'}}>
           <Nav className="me-auto">
             <Link to="/" style={{color: 'white'}} id='pages'>Home</Link>
             <Link to="/merchandise" style={{color: 'white'}} id='pages'>Merchandise</Link>
-            <NavDropdown title="Social Links" id="basic-nav-dropdown" className='socialIcons' style={{fontFamily: "Georgia, 'Times New Roman', Times, serif;"}}>
+            <NavDropdown title="Social Links" id="basic-nav-dropdown" className='socialIcons'>
               <NavDropdown.Item href="https://www.instagram.com/setincusa/" rel="noopener noreferrer" target="_blank">
                 <i className="fa fa-instagram" aria-hidden="true" style={{paddingRight: '5px', color: 'black'}}/> Instagram
               </NavDropdown.Item>
