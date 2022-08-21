@@ -1,12 +1,9 @@
 import React, { Component } from 'react';
-import { Grid, Cell } from 'react-mdl';
 
 class Services extends Component {
   render() {
     return(
       <div id="resumeBack">
-      <Grid style={{paddingTop: '30px'}}>
-        <Cell className='resume-left-col' col={8} style={{borderRadius:"60px"}}>
           <center>
           <img src="./images/me.jpg" alt="clintRizzo" className='me' id='frontImage'></img>
           </center>
@@ -36,8 +33,6 @@ class Services extends Component {
           <center>
           <hr style={{borderTop: '3px solid #e22947', width: '95%'}}/>
           </center>
-        </Cell>
-      </Grid>
       </div>
     )
   }

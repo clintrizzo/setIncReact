@@ -1,72 +1,44 @@
 import React, { Component } from 'react';
 import { Grid, Cell } from 'react-mdl';
-
+import Button from 'react-bootstrap/Button';
+import Testimonials from './testimonials.js'
+import Services from './services.js'
 class LandingPage extends Component {
   render() {
     return(
       <div id="missionStatement">
-      <Grid style={{paddingTop: '30px'}}>
-        <Cell className='resume-left-col' col={6} style={{borderRadius:"60px"}}>
-          <center>
-          <img src="./images/me.jpg" alt="clintRizzo" className='me' id='frontImage'></img>
-          </center>
-          <h3 className='position'>Full Stack Web Developer</h3>
-          <center>
-          <hr style={{borderTop: '3px solid #e22947',  width: '85%'}}/>
-          </center>
-          <p className='developerStory'>Web Developer with a background in Customer Service. Recognized as proactive, resourceful, and persistent problem-solver. Excellent communicator with effective client relationship building skills. Earned a Certificate in Full-Stack Web Development from the University of CA-Irvine with the goal of becoming a skilled Web Developer. Languages learned were HTML/CSS, Javascript, Node, Express, and React. Main goal in becoming a successful Web Developer is to continue learning as much as possible to become an essential asset to any team. Because of the skills learned through the bootcamp and personal background any task given will be completed.
-          </p>
-          <center>
-          <hr style={{borderTop: '3px solid #e22947', width: '95%'}}/>
-          </center>
-          <br></br>
-          <h3 className='info'>Coding Languages:</h3>
-          <br></br>
-          <h5 className='languageInfo'>HTML/CSS | Bootstrap | JavaScript | MySQL | NodeJS | Express | MongoDB | React</h5>
-          <br></br>
-          <center>
-          <hr style={{borderTop: '3px solid #e22947', width: '95%'}}/>
-          </center>
-          <h5 className='info'>Address:</h5>
-          <p className='answer'>Corona, California</p>
-          <h5 className='info'>Phone:</h5>
-          <p className='answer'>(951) 288-2247</p>
-          <h5 className='info'>Email:</h5>
-          <p className='answer'>clint.rizzo92@gmail.com</p>
-          <center>
-          <hr style={{borderTop: '3px solid #e22947', width: '95%'}}/>
-          </center>
+      <Grid style={{paddingTop: '30px', paddingBottom: '100px'}}>
+        <Cell className='resume-left-col' id='aboutSetInc' col={6} style={{borderRadius:"25px"}}>
+          <div className="float-container">
+            <div className="float-child" id='float'>
+              <div>
+                <img src="./images/landingpage/team.png" alt="clintRizzo" className='setTeam' id='teamImage'></img>
+              </div>
+            </div>
+
+            <div className="float-child" id='float'>
+              <div>
+                <center>
+                  <h3 style={{color: 'red'}} className='title'>S.E.T. Inc. USA</h3>
+                  <br />
+                    <p className='setincStatement'>Strategic Electrical Technolgies is an Orange County based Electrical Contractor.
+                    Our mission is to provide quality and efficiency in every task performed.
+                    From the simple Lighting Maintenance, to the more complex Energy Management Systems and Variable Frequency Drives.
+                    The quality is apparent in the finished product.
+                    </p>
+                  <br />
+                  <p>Nicky Wilson, <br /> General Manager</p>
+                  <Button active href='tel:9512882247' id='phoneNumber'>
+                    <p id='callNowText'>CALL NOW <br /> (714) 916-7327</p>
+                    </Button>{' '}
+                </center>
+              </div>
+            </div>
+          </div>
+          <Testimonials />
         </Cell>
-        <Cell className='resume-left-col' col={6} style={{borderRadius:"60px"}}>
-          <center>
-          <img src="./images/me.jpg" alt="clintRizzo" className='me' id='frontImage'></img>
-          </center>
-          <h3 className='position'>Full Stack Web Developer</h3>
-          <center>
-          <hr style={{borderTop: '3px solid #e22947',  width: '85%'}}/>
-          </center>
-          <p className='developerStory'>Web Developer with a background in Customer Service. Recognized as proactive, resourceful, and persistent problem-solver. Excellent communicator with effective client relationship building skills. Earned a Certificate in Full-Stack Web Development from the University of CA-Irvine with the goal of becoming a skilled Web Developer. Languages learned were HTML/CSS, Javascript, Node, Express, and React. Main goal in becoming a successful Web Developer is to continue learning as much as possible to become an essential asset to any team. Because of the skills learned through the bootcamp and personal background any task given will be completed.
-          </p>
-          <center>
-          <hr style={{borderTop: '3px solid #e22947', width: '95%'}}/>
-          </center>
-          <br></br>
-          <h3 className='info'>Coding Languages:</h3>
-          <br></br>
-          <h5 className='languageInfo'>HTML/CSS | Bootstrap | JavaScript | MySQL | NodeJS | Express | MongoDB | React</h5>
-          <br></br>
-          <center>
-          <hr style={{borderTop: '3px solid #e22947', width: '95%'}}/>
-          </center>
-          <h5 className='info'>Address:</h5>
-          <p className='answer'>Corona, California</p>
-          <h5 className='info'>Phone:</h5>
-          <p className='answer'>(951) 288-2247</p>
-          <h5 className='info'>Email:</h5>
-          <p className='answer'>clint.rizzo92@gmail.com</p>
-          <center>
-          <hr style={{borderTop: '3px solid #e22947', width: '95%'}}/>
-          </center>
+        <Cell className='resume-left-col' id='aboutSetInc' col={6} style={{borderRadius:"25px"}}>
+          <Services />
         </Cell>
       </Grid>
       </div>

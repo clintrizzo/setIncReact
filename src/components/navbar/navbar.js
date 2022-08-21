@@ -10,16 +10,14 @@ function BasicExample() {
   return (
     <Navbar expand="lg" className='navbar' sticky='top'>
       <Container>
-        <Navbar.Brand style={{color: 'red'}}>
         <img
-        className='rotateimg180'
-        src="../images/setloco.ico"
-        width="35"
-        height="35"
-        color='white'
-        />{' Strategic Electrical Technologies'}
-        </Navbar.Brand>
-        <Navbar.Toggle aria-controls="basic-navbar-nav" style={{backgroundColor: 'grey'}}/>
+          className='rotateimg180'
+          src="../images/setloco.ico"
+          width="35"
+          height="35"
+        />
+        <Navbar.Brand style={{color: 'white'}}><a id='navTitle'>Strategic Electrical Technologies</a></Navbar.Brand>
+        <Navbar.Toggle aria-controls="basic-navbar-nav"/>
         <Navbar.Collapse id="basic-navbar-nav" style={{marginLeft: '60px'}}>
           <Nav className="me-auto">
             <Link to="/" style={{color: 'white'}} id='pages'>Home</Link>
