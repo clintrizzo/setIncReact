@@ -5,6 +5,8 @@
   height: 100%
 }
 
+
+/* LANDING PAGE DESIGN SECTION */
 /* about set inc portion keep in order */
 #aboutSetInc{
   background-color: black;
@@ -56,18 +58,6 @@
   font-weight: 600;
 }
 
-/* Testimonials section */
-.testimonials{
-  float: left;
-  width: 100%;
-  padding: 20px;
-  color: white
-}
-
-.customerWords{
-  font-family:'Courier New', Courier, monospace;
-}
-
 /* media section for landing page */
 @media screen and (max-width: 812px){
   #teamImage{
@@ -89,4 +79,19 @@
     letter-spacing: 1px;
     font-size: 16.5px;
   }
+}
+
+/* TESTIMONIALS DESIGN SECTION */
+
+/* Testimonials section */
+.testimonials{
+  float: left;
+  width: 100%;
+  padding: 20px;
+  color: white;
+}
+
+.customerWords{
+  font-family:'Courier New', Courier, monospace;
+  color: red;
 }
