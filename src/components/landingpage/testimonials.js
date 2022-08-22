@@ -7,7 +7,6 @@ class Testimonials extends Component {
         <hr style={{borderTop: '3px solid red',  width: '100%'}}/>
         <center>
           <h3 className='customerWords'>Testimonials</h3>
-          <p>A few words from our previous and current clients.</p>
         </center>
         <Card />
       </div>
