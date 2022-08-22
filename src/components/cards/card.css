@@ -1,0 +1,10 @@
+.owner{
+  color: black;
+  font-size: 15px;
+  font-weight: bold;
+}
+
+.checked {
+  color: orange;
+  margin: 1px;
+}
