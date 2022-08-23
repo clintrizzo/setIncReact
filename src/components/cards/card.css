@@ -1,3 +1,7 @@
+.reviewText{
+  font-family:'Courier New', Courier, monospace;
+}
+
 .owner{
   color: black;
   font-size: 15px;
