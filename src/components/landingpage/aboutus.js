@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import { Grid, Cell } from 'react-mdl';
 import Button from 'react-bootstrap/Button';
+import Licenses from './license.js'
 import Testimonials from './testimonials.js'
 import Services from './services.js'
 class LandingPage extends Component {
@@ -19,7 +20,7 @@ class LandingPage extends Component {
             <div className="float-child" id='float'>
               <div>
                 <center>
-                  <h3 style={{color: 'red'}} className='title'>S.E.T. Inc. USA</h3>
+                  <h3 style={{color:'#990000'}} className='title'>S.E.T. Inc. USA</h3>
                   <br />
                     <p className='setincStatement'>Strategic Electrical Technolgies is an Orange County based Electrical Contractor.
                     Our mission is to provide quality and efficiency in every task performed.
@@ -30,11 +31,12 @@ class LandingPage extends Component {
                   <p>Nicky Wilson, <br /> General Manager</p>
                   <Button active href='tel:9512882247' id='phoneNumber'>
                     <p id='callNowText'>CALL NOW <br /> (714) 916-7327</p>
-                    </Button>{' '}
+                  </Button>{' '}
                 </center>
               </div>
             </div>
           </div>
+          <Licenses />
           <Testimonials />
         </Cell>
         <Cell className='resume-left-col' id='aboutSetInc' col={6} style={{borderRadius:"25px"}}>
