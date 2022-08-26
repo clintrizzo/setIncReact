@@ -20,7 +20,7 @@ class ServicesCards extends Component {
                 <div className="flip-box-front">
                   <Card id='cardBorder' style={{margin: '10px', borderRadius: '15px', backgroundColor: 'white'}}>
                     <center>
-                      <Card.Img className='serviceImage' id='serviceImageMobile' variant="top" src="./images/electricalServices/building_automation.png" />
+                      <Card.Img className='serviceImage' id='serviceImageMobile' alt='services01' variant="top" src="./images/electricalServices/building_automation.png" />
                       </center>
                     <Card.Body>
                       <center>
@@ -56,7 +56,7 @@ class ServicesCards extends Component {
               <div className="flip-box-front">
                 <Card id='cardBorder' style={{margin: '10px', borderRadius: '15px', backgroundColor: 'white'}}>
                   <center>
-                    <Card.Img className='serviceImage' id='serviceImageMobile' variant="top" src="./images/electricalServices/title_24.png" />
+                    <Card.Img className='serviceImage' id='serviceImageMobile' alt='services02' variant="top" src="./images/electricalServices/title_24.png" />
                     </center>
                   <Card.Body>
                     <center>
@@ -101,7 +101,7 @@ class ServicesCards extends Component {
             <div className="flip-box-front">
               <Card id='cardBorder' style={{margin: '10px', borderRadius: '15px', backgroundColor: 'white'}}>
                 <center>
-                  <Card.Img className='serviceImage' id='serviceImageMobile' variant="top" src="./images/electricalServices/public_works.png" />
+                  <Card.Img className='serviceImage' id='serviceImageMobile' alt='services03' variant="top" src="./images/electricalServices/public_works.png" />
                 </center>
                 <Card.Body>
                     <center>
@@ -137,7 +137,7 @@ class ServicesCards extends Component {
             <div className="flip-box-front">
               <Card id='cardBorder' style={{margin: '10px', borderRadius: '15px', backgroundColor: 'white'}}>
                 <center>
-                  <Card.Img className='serviceImage' id='serviceImageMobile' variant="top" src="./images/electricalServices/troubleshooting.png" />
+                  <Card.Img className='serviceImage' id='serviceImageMobile' alt='services04' variant="top" src="./images/electricalServices/troubleshooting.png" />
                 </center>
                 <Card.Body>
                 <center>
@@ -180,7 +180,7 @@ class ServicesCards extends Component {
             <div className="flip-box-front">
               <Card id='cardBorder' style={{margin: '10px', borderRadius: '15px', backgroundColor: 'white'}}>
                 <center>
-                  <Card.Img className='serviceImage' id='serviceImageMobile' variant="top" src="./images/electricalServices/tenant_improvement.png" />
+                  <Card.Img className='serviceImage' id='serviceImageMobile' alt='services05' variant="top" src="./images/electricalServices/tenant_improvement.png" />
                 </center>
                 <Card.Body>
                   <center>
@@ -216,7 +216,7 @@ class ServicesCards extends Component {
             <div className="flip-box-front">
               <Card id='cardBorder' style={{margin: '10px', borderRadius: '15px', backgroundColor: 'white'}}>
                 <center>
-                  <Card.Img className='serviceImage' id='serviceImageMobile'  variant="top" src="./images/electricalServices/service_and_repair.png" />
+                  <Card.Img className='serviceImage' id='serviceImageMobile' alt='services06'  variant="top" src="./images/electricalServices/service_and_repair.png" />
                 </center>
                 <Card.Body>
                 <center>
