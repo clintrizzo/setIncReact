@@ -8,18 +8,19 @@ import Button from 'react-bootstrap/Button';
 
 import './card.css';
 
-function ServicesCards() {
-  return (
+class ServicesCards extends Component {
+  render() {
+    return(
     <div>
       <Row>
         <Col>
-          <CardGroup>
-            <div class="flip-box">
-              <div class="flip-box-inner">
-                <div class="flip-box-front">
+          <CardGroup style={{marginTop:'-100px'}}>
+            <div className="flip-box" id="flip-box-id">
+              <div className="flip-box-inner">
+                <div className="flip-box-front">
                   <Card id='cardBorder' style={{margin: '10px', borderRadius: '15px', backgroundColor: 'white'}}>
                     <center>
-                      <Card.Img style={{width: '350px', height: '260px', marginTop: '10px', borderRadius: '10px'}} variant="top" src="./images/electricalServices/building_automation.png" />
+                      <Card.Img className='serviceImage' id='serviceImageMobile' variant="top" src="./images/electricalServices/building_automation.png" />
                       </center>
                     <Card.Body>
                       <center>
@@ -30,17 +31,18 @@ function ServicesCards() {
                     </Card.Body>
                   </Card>
                 </div>
-                <div class="flip-box-back">
+                <div className="flip-box-back" id="flip-box-back-id">
                   <Card id='cardBorder' style={{margin: '10px', borderRadius: '15px', backgroundColor: 'white'}}>
                   <Card.Body>
                     <center>
                       <Card.Title style={{color:'#990000'}}>BUILDING AUTOMATION & ENERGY MANGEMENT SYSTEMS</Card.Title>
                       </center>
                       <hr style={{borderTop: '3px solid black',  width: '100%', marginBottom: '35px'}}/>
-                      <Card.Text className='reviewText'>
+                      <Card.Text className='reviewText' style={{marginBottom: '40px'}}>
                         Installation & Commissioning of controllers, wiring and peripherals.
                         Experience Includes: DELTA CONTROLS, SIEMENS, SCHNEIDER ELECTRIC & TRANE.
                       </Card.Text>
+                      <hr style={{borderTop: '3px solid black',  width: '100%', marginBottom: '35px'}}/>
                       <Button active href='tel:9512882247' id='servicesPhoneNumber'>
                       <p id='callNowText'>CALL NOW <br /> (714) 916-7327</p>
                       </Button>{' '}
@@ -49,36 +51,37 @@ function ServicesCards() {
               </div>
             </div>
           </div>
-          <div class="flip-box">
-            <div class="flip-box-inner">
-              <div class="flip-box-front">
+          <div className="flip-box" id="flip-box-id">
+            <div className="flip-box-inner">
+              <div className="flip-box-front">
                 <Card id='cardBorder' style={{margin: '10px', borderRadius: '15px', backgroundColor: 'white'}}>
                   <center>
-                    <Card.Img style={{width: '350px', height: '260px', marginTop: '10px', borderRadius: '10px'}} variant="top" src="./images/electricalServices/building_automation.png" />
-                  </center>
+                    <Card.Img className='serviceImage' id='serviceImageMobile' variant="top" src="./images/electricalServices/title_24.png" />
+                    </center>
                   <Card.Body>
-                  <center>
-                    <Card.Title style={{color:'#990000'}}>BUILDING AUTOMATION & ENERGY MANGEMENT SYSTEMS</Card.Title>
-                  </center>
-                  <hr style={{borderTop: '3px solid black',  width: '100%', marginBottom: '35px'}}/>
-                  Hover For Details
+                    <center>
+                      <Card.Title style={{color:'#990000'}}>TITLE 24 ACCEPTANCE TESTING & INSTALLATION</Card.Title>
+                      </center>
+                      <hr style={{borderTop: '3px solid black',  width: '100%', marginBottom: '35px'}}/>
+                      Hover For Details
                   </Card.Body>
                 </Card>
               </div>
-              <div class="flip-box-back">
-              <Card id='cardBorder' style={{margin: '10px', borderRadius: '15px', backgroundColor: 'white'}}>
+              <div className="flip-box-back" id="flip-box-back-id">
+                <Card id='cardBorder' style={{margin: '10px', borderRadius: '15px', backgroundColor: 'white'}}>
                 <Card.Body>
                   <center>
-                    <Card.Title style={{color:'#990000'}}>BUILDING AUTOMATION & ENERGY MANGEMENT SYSTEMS</Card.Title>
-                  </center>
-                  <hr style={{borderTop: '3px solid black',  width: '100%', marginBottom: '35px'}}/>
-                  <Card.Text className='reviewText'>
-                    Installation & Commissioning of controllers, wiring and peripherals.
-                    Experience Includes: DELTA CONTROLS, SIEMENS, SCHNEIDER ELECTRIC & TRANE.
-                  </Card.Text>
-                  <Button active href='tel:9512882247' id='servicesPhoneNumber'>
+                    <Card.Title style={{color:'#990000'}}>TITLE 24 ACCEPTANCE TESTING & INSTALLATION</Card.Title>
+                    </center>
+                    <hr style={{borderTop: '3px solid black',  width: '100%', marginBottom: '35px'}}/>
+                    <Card.Text className='reviewText' style={{marginBottom: '40px'}}>
+                      Certified Employer and Employees through CALCTP.
+                      Installation experience includes: nLIGHT, WATTSTOPPER & GREENGATE.
+                    </Card.Text>
+                    <hr style={{borderTop: '3px solid black',  width: '100%', marginBottom: '35px'}}/>
+                    <Button active href='tel:9512882247' id='servicesPhoneNumber'>
                     <p id='callNowText'>CALL NOW <br /> (714) 916-7327</p>
-                  </Button>{' '}
+                    </Button>{' '}
                 </Card.Body>
               </Card>
             </div>
@@ -90,36 +93,37 @@ function ServicesCards() {
 
   <br />
 
-      <Row style={{marginTop: '125px'}}>
-        <Col>
-        <CardGroup>
-          <div class="flip-box">
-            <div class="flip-box-inner">
-              <div class="flip-box-front">
-                <Card id='cardBorder' style={{margin: '10px', borderRadius: '15px', backgroundColor: 'white'}}>
-                  <center>
-                    <Card.Img style={{width: '350px', height: '260px', marginTop: '10px', borderRadius: '10px'}} variant="top" src="./images/electricalServices/building_automation.png" />
-                    </center>
-                  <Card.Body>
-                    <center>
-                      <Card.Title style={{color:'#990000'}}>BUILDING AUTOMATION & ENERGY MANGEMENT SYSTEMS</Card.Title>
-                      </center>
-                      <hr style={{borderTop: '3px solid black',  width: '100%', marginBottom: '35px'}}/>
-                      Hover For Details
-                  </Card.Body>
-                </Card>
-              </div>
-              <div class="flip-box-back">
-                <Card id='cardBorder' style={{margin: '10px', borderRadius: '15px', backgroundColor: 'white'}}>
+  <Row>
+    <Col>
+      <CardGroup>
+        <div className="flip-box" id="flip-box-id">
+          <div className="flip-box-inner">
+            <div className="flip-box-front">
+              <Card id='cardBorder' style={{margin: '10px', borderRadius: '15px', backgroundColor: 'white'}}>
+                <center>
+                  <Card.Img className='serviceImage' id='serviceImageMobile' variant="top" src="./images/electricalServices/public_works.png" />
+                </center>
                 <Card.Body>
-                  <center>
-                    <Card.Title style={{color:'#990000'}}>BUILDING AUTOMATION & ENERGY MANGEMENT SYSTEMS</Card.Title>
+                    <center>
+                      <Card.Title style={{color:'#990000'}}>PUBLIC WORKS</Card.Title>
                     </center>
                     <hr style={{borderTop: '3px solid black',  width: '100%', marginBottom: '35px'}}/>
-                    <Card.Text className='reviewText'>
-                      Installation & Commissioning of controllers, wiring and peripherals.
-                      Experience Includes: DELTA CONTROLS, SIEMENS, SCHNEIDER ELECTRIC & TRANE.
+                      Hover For Details
+                </Card.Body>
+              </Card>
+            </div>
+            <div className="flip-box-back" id="flip-box-back-id">
+              <Card id='cardBorder' style={{margin: '10px', borderRadius: '15px', backgroundColor: 'white'}}>
+                <Card.Body>
+                  <center>
+                    <Card.Title style={{color:'#990000'}}>PUBLIC WORKS</Card.Title>
+                    </center>
+                    <hr style={{borderTop: '3px solid black',  width: '100%', marginBottom: '35px'}}/>
+                    <Card.Text className='reviewText' style={{marginBottom: '40px'}}>
+                      We are registered with the DEPARTMENT OF INDUSTRIAL RELATIONS to perform work on government funded jobs and
+                      have completed work on numerous schools and Federal Buildings.
                     </Card.Text>
+                    <hr style={{borderTop: '3px solid black',  width: '100%', marginBottom: '35px'}}/>
                     <Button active href='tel:9512882247' id='servicesPhoneNumber'>
                     <p id='callNowText'>CALL NOW <br /> (714) 916-7327</p>
                     </Button>{' '}
@@ -128,33 +132,113 @@ function ServicesCards() {
             </div>
           </div>
         </div>
-        <div class="flip-box">
-          <div class="flip-box-inner">
-            <div class="flip-box-front">
+        <div className="flip-box" id="flip-box-id">
+          <div className="flip-box-inner">
+            <div className="flip-box-front">
               <Card id='cardBorder' style={{margin: '10px', borderRadius: '15px', backgroundColor: 'white'}}>
                 <center>
-                  <Card.Img style={{width: '350px', height: '260px', marginTop: '10px', borderRadius: '10px'}} variant="top" src="./images/electricalServices/building_automation.png" />
+                  <Card.Img className='serviceImage' id='serviceImageMobile' variant="top" src="./images/electricalServices/troubleshooting.png" />
                 </center>
                 <Card.Body>
                 <center>
-                  <Card.Title style={{color:'#990000'}}>BUILDING AUTOMATION & ENERGY MANGEMENT SYSTEMS</Card.Title>
+                  <Card.Title style={{color:'#990000'}}>VARIABLE FREQUENCY DRIVES</Card.Title>
                 </center>
                 <hr style={{borderTop: '3px solid black',  width: '100%', marginBottom: '35px'}}/>
                 Hover For Details
                 </Card.Body>
               </Card>
             </div>
-            <div class="flip-box-back">
+            <div className="flip-box-back" id="flip-box-back-id">
             <Card id='cardBorder' style={{margin: '10px', borderRadius: '15px', backgroundColor: 'white'}}>
               <Card.Body>
                 <center>
-                  <Card.Title style={{color:'#990000'}}>BUILDING AUTOMATION & ENERGY MANGEMENT SYSTEMS</Card.Title>
+                  <Card.Title style={{color:'#990000'}}>VARIABLE FREQUENCY DRIVES</Card.Title>
                 </center>
                 <hr style={{borderTop: '3px solid black',  width: '100%', marginBottom: '35px'}}/>
-                <Card.Text className='reviewText'>
-                  Installation & Commissioning of controllers, wiring and peripherals.
-                  Experience Includes: DELTA CONTROLS, SIEMENS, SCHNEIDER ELECTRIC & TRANE.
+                <Card.Text className='reviewText' style={{marginBottom: '40px'}}>
+                  Installation, replacement, troubleshooting and preventive maintenance. Certified start up for ABB
+                  and YASKAWA drives. Experience Includes: ABB, YASKAWA, DANFOSS and more!
                 </Card.Text>
+                <hr style={{borderTop: '3px solid black',  width: '100%', marginBottom: '35px'}}/>
+                <Button active href='tel:9512882247' id='servicesPhoneNumber'>
+                  <p id='callNowText'>CALL NOW <br /> (714) 916-7327</p>
+                </Button>{' '}
+              </Card.Body>
+            </Card>
+          </div>
+        </div>
+      </div>
+      </CardGroup>
+    </Col>
+  </Row>
+
+  <Row>
+    <Col>
+      <CardGroup>
+        <div className="flip-box" id="flip-box-id">
+          <div className="flip-box-inner">
+            <div className="flip-box-front">
+              <Card id='cardBorder' style={{margin: '10px', borderRadius: '15px', backgroundColor: 'white'}}>
+                <center>
+                  <Card.Img className='serviceImage' id='serviceImageMobile' variant="top" src="./images/electricalServices/tenant_improvement.png" />
+                </center>
+                <Card.Body>
+                  <center>
+                    <Card.Title style={{color:'#990000'}}>TENANT IMPROVEMENT</Card.Title>
+                  </center>
+                    <hr style={{borderTop: '3px solid black',  width: '100%', marginBottom: '35px'}}/>
+                      Hover For Details
+                </Card.Body>
+              </Card>
+            </div>
+            <div className="flip-box-back" id="flip-box-back-id">
+              <Card id='cardBorder' style={{margin: '10px', borderRadius: '15px', backgroundColor: 'white'}}>
+                <Card.Body>
+                  <center>
+                    <Card.Title style={{color:'#990000'}}>TENANT IMPROVEMENT</Card.Title>
+                    </center>
+                    <hr style={{borderTop: '3px solid black',  width: '100%', marginBottom: '35px'}}/>
+                    <Card.Text className='reviewText' style={{marginBottom: '40px'}}>
+                      Office space, medical facilities, restaurants and research labs/clean rooms.
+                      We can also provide temporary power and lighting from existing panels or temporary power poles.
+                    </Card.Text>
+                    <hr style={{borderTop: '3px solid black',  width: '100%', marginBottom: '35px'}}/>
+                    <Button active href='tel:9512882247' id='servicesPhoneNumber'>
+                    <p id='callNowText'>CALL NOW <br /> (714) 916-7327</p>
+                    </Button>{' '}
+                </Card.Body>
+              </Card>
+            </div>
+          </div>
+        </div>
+        <div className="flip-box" id="flip-box-id">
+          <div className="flip-box-inner">
+            <div className="flip-box-front">
+              <Card id='cardBorder' style={{margin: '10px', borderRadius: '15px', backgroundColor: 'white'}}>
+                <center>
+                  <Card.Img className='serviceImage' id='serviceImageMobile'  variant="top" src="./images/electricalServices/service_and_repair.png" />
+                </center>
+                <Card.Body>
+                <center>
+                  <Card.Title style={{color:'#990000'}}>SERVICE AND REPAIR</Card.Title>
+                </center>
+                <hr style={{borderTop: '3px solid black',  width: '100%', marginBottom: '35px'}}/>
+                Hover For Details
+                </Card.Body>
+              </Card>
+            </div>
+            <div className="flip-box-back" id="flip-box-back-id">
+            <Card id='cardBord' style={{margin: '10px', borderRadius: '15px', backgroundColor: 'white'}}>
+              <Card.Body>
+                <center>
+                  <Card.Title style={{color:'#990000'}}>SERVICE AND REPAIR</Card.Title>
+                </center>
+                <hr style={{borderTop: '3px solid black',  width: '100%', marginBottom: '35px'}}/>
+                <Card.Text className='reviewText' style={{marginBottom: '40px'}}>
+                  Preventive maintenance, lighting retrofits, lighting maintenance, new circuits, receptacle addition
+                  or relocation, troubleshooting, site surveys, update panel schedules & more!
+                </Card.Text>
+                <hr style={{borderTop: '3px solid black',  width: '100%', marginBottom: '35px'}}/>
                 <Button active href='tel:9512882247' id='servicesPhoneNumber'>
                   <p id='callNowText'>CALL NOW <br /> (714) 916-7327</p>
                 </Button>{' '}
@@ -164,89 +248,11 @@ function ServicesCards() {
         </div>
       </div>
     </CardGroup>
-        </Col>
-      </Row>
-
-      <br />
-
-      <Row style={{marginTop: '125px'}}>
-        <Col>
-        <CardGroup>
-          <div class="flip-box">
-            <div class="flip-box-inner">
-              <div class="flip-box-front">
-                <Card id='cardBorder' style={{margin: '10px', borderRadius: '15px', backgroundColor: 'white'}}>
-                  <center>
-                    <Card.Img style={{width: '350px', height: '260px', marginTop: '10px', borderRadius: '10px'}} variant="top" src="./images/electricalServices/building_automation.png" />
-                    </center>
-                  <Card.Body>
-                    <center>
-                      <Card.Title style={{color:'#990000'}}>BUILDING AUTOMATION & ENERGY MANGEMENT SYSTEMS</Card.Title>
-                      </center>
-                      <hr style={{borderTop: '3px solid black',  width: '100%', marginBottom: '35px'}}/>
-                      Hover For Details
-                  </Card.Body>
-                </Card>
-              </div>
-              <div class="flip-box-back">
-                <Card id='cardBorder' style={{margin: '10px', borderRadius: '15px', backgroundColor: 'white'}}>
-                <Card.Body>
-                  <center>
-                    <Card.Title style={{color:'#990000'}}>BUILDING AUTOMATION & ENERGY MANGEMENT SYSTEMS</Card.Title>
-                    </center>
-                    <hr style={{borderTop: '3px solid black',  width: '100%', marginBottom: '35px'}}/>
-                    <Card.Text className='reviewText'>
-                      Installation & Commissioning of controllers, wiring and peripherals.
-                      Experience Includes: DELTA CONTROLS, SIEMENS, SCHNEIDER ELECTRIC & TRANE.
-                    </Card.Text>
-                    <Button active href='tel:9512882247' id='servicesPhoneNumber'>
-                    <p id='callNowText'>CALL NOW <br /> (714) 916-7327</p>
-                    </Button>{' '}
-                </Card.Body>
-              </Card>
-            </div>
-          </div>
-        </div>
-        <div class="flip-box">
-          <div class="flip-box-inner">
-            <div class="flip-box-front">
-              <Card id='cardBorder' style={{margin: '10px', borderRadius: '15px', backgroundColor: 'white'}}>
-                <center>
-                  <Card.Img style={{width: '350px', height: '260px', marginTop: '10px', borderRadius: '10px'}} variant="top" src="./images/electricalServices/building_automation.png" />
-                </center>
-                <Card.Body>
-                <center>
-                  <Card.Title style={{color:'#990000'}}>BUILDING AUTOMATION & ENERGY MANGEMENT SYSTEMS</Card.Title>
-                </center>
-                <hr style={{borderTop: '3px solid black',  width: '100%', marginBottom: '35px'}}/>
-                Hover For Details
-                </Card.Body>
-              </Card>
-            </div>
-            <div class="flip-box-back">
-            <Card id='cardBorder' style={{margin: '10px', borderRadius: '15px', backgroundColor: 'white'}}>
-              <Card.Body>
-                <center>
-                  <Card.Title style={{color:'#990000'}}>BUILDING AUTOMATION & ENERGY MANGEMENT SYSTEMS</Card.Title>
-                </center>
-                <hr style={{borderTop: '3px solid black',  width: '100%', marginBottom: '35px'}}/>
-                <Card.Text className='reviewText'>
-                  Installation & Commissioning of controllers, wiring and peripherals.
-                  Experience Includes: DELTA CONTROLS, SIEMENS, SCHNEIDER ELECTRIC & TRANE.
-                </Card.Text>
-                <Button active href='tel:9512882247' id='servicesPhoneNumber'>
-                  <p id='callNowText'>CALL NOW <br /> (714) 916-7327</p>
-                </Button>{' '}
-              </Card.Body>
-            </Card>
-          </div>
-        </div>
-      </div>
-    </CardGroup>
-        </Col>
-      </Row>
-    </div>
+  </Col>
+</Row>
+</div>
   );
+}
 }
 
 export default ServicesCards;

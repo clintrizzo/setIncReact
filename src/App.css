@@ -94,6 +94,16 @@
   padding-bottom: 15px
 }
 
+/* licenses media section */
+@media screen and (max-width: 812px){
+  .licenseImage{
+    width:50px;
+    height:70px;
+    opacity: 0.4;
+    padding-bottom: 15px
+  }
+}
+
 /* TESTIMONIALS DESIGN SECTION */
 
 /* Testimonials section */
@@ -117,12 +127,21 @@
   color: #990000;
 }
 
+.serviceImage{
+  height: 250px;
+  margin-top: 10px;
+}
 
+#serviceImageMobile{
+  width: 340px;
+  border-radius: 10px;
+}
 
 .flip-box {
-  width: 400px;
+  width: 375px;
   height: 300px;
   perspective: 1000px;
+  margin-top:100px;
 }
 
 .flip-box-inner {
@@ -173,4 +192,28 @@
   transition-property: all;
   background-color: black;
   box-shadow: 0px 25px 20px -20px rgb(253 98 90 / 30%);
+}
+
+/* media section for services page */
+@media screen and (max-width: 812px){
+  .mobileDisplay{
+    overflow: auto;
+    display: block;
+    width: 100%
+  }
+  .servicesOffered{
+    font-family:'Courier New', Courier, monospace;
+    color: #990000;
+    font-size: 30px
+
+  }
+  .flip-box {
+    width: 345px;
+    height: 300px;
+    perspective: 1000px;
+  }
+  #serviceImageMobile{
+    width: 315px;
+    border-radius: 10px;
+  }
 }

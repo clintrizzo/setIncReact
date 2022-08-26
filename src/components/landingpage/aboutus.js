@@ -39,7 +39,7 @@ class LandingPage extends Component {
           <Licenses />
           <Testimonials />
         </Cell>
-        <Cell className='resume-left-col' id='aboutSetInc' col={6} style={{borderRadius:"25px"}}>
+        <Cell className='resume-left-col' id='aboutSetInc' className='mobileDisplay' col={6} style={{borderRadius:"25px"}}>
           <Services />
         </Cell>
       </Grid>
