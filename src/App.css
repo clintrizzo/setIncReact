@@ -128,8 +128,9 @@
 }
 
 .serviceImage{
-  height: 250px;
-  margin-top: 10px;
+  height: 200px;
+  margin-top: 5px;
+  background-color:grey;
 }
 
 #serviceImageMobile{
@@ -139,9 +140,9 @@
 
 .flip-box {
   width: 375px;
-  height: 300px;
+  height: 250px;
   perspective: 1000px;
-  margin-top:100px;
+  margin-top:110px;
 }
 
 .flip-box-inner {
@@ -170,7 +171,7 @@
 }
 
 .flip-box-back {
-  height: 300px;
+  height: 250px;
   color: black;
   transform: rotateY(180deg);
 }
