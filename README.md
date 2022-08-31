@@ -1,11 +1,10 @@
-# SetINC Electrical :hammer: Under Construction :hammer:
+# SetINC Electrical
 
 #Table of Contents
   - [Description:](#description)
   - [Installation:](#installation)
   - [Packages:](#packages)
-  <!-- - [Testing:](#testing) -->
-
+  - [Deployment] (#deployment)
 
 ## Description:
 Strategic Electrical Technologies is an Orange County based Electrical Contractor. Our mission is to provide quality and efficiency in every task performed. From the simple Lighting Maintenance, to the more complex Energy Management Systems and Variable Frequency Drives. The quality is apparent in the finished product.
@@ -25,8 +24,4 @@ npx create-react-app "my-app"
 5. react-mdl (npm install --save react-mdl)
 6. fontawesome (npm i --save @fortawesome/fontawesome-svg-core / npm install --save @fortawesome/free-solid-svg-icons / npm install --save @fortawesome/react-fontawesome)
 
-<!-- ## Testing:
-npm install cypress --save-dev
-- npm run cy
-
-Used cypress for my e2e testing. Mostly added this for practice but also to add more checks to the pull requests. I added three different test specs. Landing page, projects, and projects functionality.  -->
+## Deployment:

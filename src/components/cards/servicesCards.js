@@ -15,7 +15,7 @@ class ServicesCards extends Component {
       <Row>
         <Col>
           <CardGroup style={{marginTop:'-100px'}}>
-            <div className="flip-box" id="flip-box-id">
+            <div className="flip-box" id="flip-box-id" id='top-flip-box'>
               <div className="flip-box-inner">
                 <div className="flip-box-front">
                   <Card id='cardBorder' id='cardFlip' style={{margin: '10px', borderRadius: '15px', backgroundColor: 'white'}}>
