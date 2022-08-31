@@ -20,8 +20,6 @@ function BasicExample() {
         <Navbar.Toggle aria-controls="basic-navbar-nav"/>
         <Navbar.Collapse id="basic-navbar-nav" style={{marginLeft: '60px'}}>
           <Nav className="me-auto">
-            <Link to="/" style={{color: 'white'}} id='pages'>Home</Link>
-            <Link to="/merchandise" style={{color: 'white'}} id='pages'>Merchandise</Link>
             <NavDropdown title="Social Links" id="basic-nav-dropdown" className='socialIcons'>
               <NavDropdown.Item href="https://www.instagram.com/setincusa/" rel="noopener noreferrer" target="_blank">
                 <i className="fa fa-instagram" aria-hidden="true" style={{paddingRight: '5px', color: 'black'}}/> Instagram
