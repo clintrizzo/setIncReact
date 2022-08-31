@@ -25,4 +25,4 @@ npx create-react-app "my-app"
 6. fontawesome (npm i --save @fortawesome/fontawesome-svg-core / npm install --save @fortawesome/free-solid-svg-icons / npm install --save @fortawesome/react-fontawesome)
 
 ## Deployment using vercel:
-- [setinc](https://set-inc-react.vercel.app/)
+- [setINC](https://set-inc-react.vercel.app/)
